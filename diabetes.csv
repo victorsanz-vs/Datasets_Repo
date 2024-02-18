@@ -1,0 +1,55 @@
+Edad;Perimetro;Tipo;SEXO;PRN;Ngest;IMC;AumPeso;PAB;RoturaBolsa
+26;323;Forces;V;2,9;1;36;44;305;No
+32;303;Parto Natural;M;3,1;1;26;33;323;No
+29;322;Parto Natural;V;3,47;2;25;55;325;No
+26;291;Forces;V;2,1;1;23;62;260;No
+28;318;Parto Natural;V;3,6;1;30;38;321;No
+26;322;Forces;V;3,4;1;27;19;327;No
+32;293;Parto Natural;V;2,9;2;26;14;297;No
+32;325;Parto Natural;V;3,67;1;27;12;306;No
+26;313;Parto Natural;V;3,7;2;21;93;315;No
+29;323;Parto Natural;M;2,2;1;23;88;332;No
+28;353;Parto Natural;V;3,4;2;29;27;356;No
+28;323;Forces;V;4,1;3;31;82;322;No
+29;325;Parto Natural;V;3,2;4;31;12;328;No
+32;312;Forces;M;3,2;1;20;12;290;No
+20;279;Parto Natural;M;2,6;5;18;59;282;Si
+28;312;Parto Natural;V;3;1;22;36;313;No
+28;344;Parto Natural;V;4;1;91;15;323;Si
+28;326;Parto Natural;V;3;2;28;35;326;No
+27;301;Parto Natural;M;3;1;22;12;312;No
+20;253;Forces;M;3;32;67;12;320;Si
+20;317;Parto Natural;V;2;2;19;55;311;No
+23;339;Parto Natural;V;3;1;24;8;334;No
+28;313;Parto Natural;V;3;1;18;69;319;No
+27;298;Parto Natural;M;3;1;29;59;308;No
+26;323;Parto Natural;M;3;2;24;32;319;No
+29;338;Parto Natural;V;3;2;31;63;348;No
+26;322;Parto Natural;M;2,8;1;22;33;310;No
+18;303;Parto Natural;V;2,9;1;21;35;291;No
+26;320;Parto Natural;M;3;2;34;8;335;No
+28;327;Parto Natural;M;3;1;24;36;329;No
+26;315;Parto Natural;M;3;3;21;43;321;No
+26;324;Parto Natural;V;3;2;26;8;326;No
+28;318;Parto Natural;V;3;3;22;9;326;No
+28;319;Parto Natural;V;3;1;33;6;294;Si
+20;310;Parto Natural;M;2,9;1;25;9;315;No
+28;320;Parto Natural;M;3;1;34;6;338;No
+28;308;Forces;V;5;25;19;14;330;No
+26;328;Parto Natural;V;3;2;24;21;315;No
+26;326;Parto Natural;M;3;1;23;62;342;No
+27;316;Parto Natural;V;3;24;22;6;300;Si
+29;317;Parto Natural;M;3;23;44;6;320;No
+28;314;Forces;M;2,67;4;23;5;285;No
+27;310;Parto Natural;V;3;1;29;52;306;No
+28;322;Parto Natural;M;3;1;32;17;368;No
+29;299;Parto Natural;M;3;1;25;9;310;No
+25;305;Parto Natural;M;3;36;95;20;323;No
+27;284;Parto Natural;M;3;3;30;20;286;Si
+27;300;Parto Natural;M;2;1;27;8;302;No
+29;327;Parto Natural;M;2;5;21;12;302;No
+29;303;Parto Natural;M;3;23;23;12;296;No
+14;305;Forces;M;1,74;1;31;27;294;No
+27;300;Parto Natural;V;3;2;22;7;305;No
+28;303;Parto Natural;M;3;1;22;12;300;No
+27;325;Parto Natural;V;4;1;23;9;324;No
