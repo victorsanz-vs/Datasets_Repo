@@ -1,4 +1,4 @@
-Género;Edad;¿Paga en efectivo?;¿Compra on-line?;Gasto medio mensual
+Genero;Edad;Paga en efectivo;Compra on-line;Gasto medio mensual
 Hombre;37;No;No;210,13
 Mujer;20;No;No;108,73
 Hombre;53;Si;Si;228,54
