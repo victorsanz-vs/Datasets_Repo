@@ -1,5 +1,5 @@
-# nombre: victor sanz arevalo
-# fecha: 29-02-2024
+# nombre:	victor sanz arevalo
+# fecha:	29-02-2024
 
 tCompras<-read.csv(file.choose(),header=TRUE,sep=",")
 dim(tCompras)
@@ -37,5 +37,13 @@ names(tComprasPlus)
 head(tComprasPlus)
 
 tCompras2<-tComprasPlus
-write.table(tCompras2,file="D:\\githubDrop\\Datasets_Repo\\Compras2.csv",
-sep=",",col.names=TRUE,row.names=FALSE)
+write.table(tCompras2,file="D:\\githubDrop\\Datasets_Repo\\datasets_compras\\Compras2.csv",sep=",",col.names=TRUE,row.names=FALSE)
+
+# Reglas sacadas a partir del algoritmo J48 en Weka:
+# REGLA1: Edad>65->A			p_acierto: 478/488
+# REGLA2: Edad=65|Genero="H"->A		p_acierto: 6/7
+# REGLA3: 61<=Edad<=64|Genero='M'->R	p_acierto: 1
+# REGLA4: 35<=Edad<=60--'R'		p_acierto: practicamente 1
+# REGLA5: 31<=Edad<=35|Genero='M'->R	p_acierto: 0.99
+# REGLA6: 30<=Edad<=35|Genero='H'->A	p_acierto: 0.85
+# REGLA7: Edad<=19->M			p_acierto: 0.88
