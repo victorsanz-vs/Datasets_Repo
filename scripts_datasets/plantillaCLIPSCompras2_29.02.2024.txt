@@ -1,0 +1,77 @@
+;1ª Plantilla:
+(deftemplate Individuo
+	(slot id (type INTEGER))
+	(slot Edad (type INTEGER))
+	(slot Sexo (type SYMBOL) (allowed-symbols Hombre Mujer)))
+;2ª Plantilla:
+(deftemplate Gasto
+	(slot id (type INTEGER))
+	(slot G (type SYMBOL) (allowed-symbols M V A R)))
+;1ª Regla:
+(defrule rule1
+	(Individuo
+        	(id ?id)
+        	(Edad ?edad&:(> ?edad 65)))
+    	=>
+    	(assert (Gasto (id ?id) (G A))))
+;2ª Regla:
+(defrule rule2
+	(Individuo
+		(id ?id)
+		(Edad ?edad&:(= ?edad 65))
+		(Sexo Hombre))
+	=>
+	(assert (Gasto (id ?id) (G A))))
+;3ª Regla:
+(defrule rule3
+	(Individuo
+		(id ?id)
+		(Edad ?edad&:(and(<= ?edad 64) (>= ?edad 60)))
+		(Sexo Mujer))
+	=>
+	(assert (Gasto (id ?id) (G R))))
+;4ª Regla:
+(defrule rule4
+	(Individuo
+		(id ?id)
+		(Edad ?edad&:(and(<= ?edad 60) (>= ?edad 36))))
+	=>
+	(assert (Gasto (id ?id) (G R))))
+;5ª Regla:
+(defrule rule5
+	(Individuo
+		(id ?id)
+		(Edad ?edad&:(and(<= ?edad 35) (>= ?edad 30)))
+		(Sexo Mujer))
+	=>
+	(assert (Gasto (id ?id) (G R))))
+;6ª Regla:
+(defrule rule6
+	(Individuo
+		(id ?id)
+		(Edad ?edad&:(and(<= ?edad 35) (>= ?edad 30)))
+		(Sexo Hombre))
+	=>
+	(assert (Gasto (id ?id) (G A))))
+;7ª Regla:
+(defrule rule7
+	(Individuo
+		(id ?id)
+		(Edad ?edad&:(<= ?edad 19)))
+	=>
+	(assert (Gasto (id ?id) (G M))))
+;R: muestra<-tComprasPlus[sample(nrow(tComprasPlus),20),]
+(deffacts VariosHechos
+	(Individuo (id 3981) (Edad 19) (Sexo Mujer))
+    	(Individuo (id 3187) (Edad 39) (Sexo Mujer))
+    	(Individuo (id 2260) (Edad 55) (Sexo Mujer))
+    	(Individuo (id 3516) (Edad 42) (Sexo Hombre))
+	(Individuo (id 2792) (Edad 53) (Sexo Hombre))
+	(Individuo (id 920) (Edad 39) (Sexo Mujer))
+	(Individuo (id 2618) (Edad 55) (Sexo Hombre))
+	(Individuo (id 1531) (Edad 58) (Sexo Hombre))
+    	(Individuo (id 435) (Edad 20) (Sexo Mujer))
+    	(Individuo (id 3254) (Edad 40) (Sexo Mujer)))
+(reset)
+(run)
+(facts)
